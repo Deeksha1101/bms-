@@ -12,7 +12,9 @@ function SingleMovieFetch() {
 
   useEffect(async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/movie/${movid}`);
+      const response = await axios.get(
+        `https://book-my-show-backend-11.herokuapp.com/movie/${movid}`
+      );
       console.log(response);
       setSingleData([response.data]);
       console.log([response.data]);

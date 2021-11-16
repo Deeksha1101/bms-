@@ -24,7 +24,10 @@ function Registration() {
     };
     // userDetails.username = 'nik';
     // console.log(userDetails);
-    await axios.post("http://localhost:5000/user-register", userDetails);
+    await axios.post(
+      "https://book-my-show-backend-11.herokuapp.com/user-register",
+      userDetails
+    );
     // const response = await axios.post('http://localhost:5000/user-register', userDetails);
     // console.log(response);
     clearInput();
